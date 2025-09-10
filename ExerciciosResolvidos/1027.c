@@ -46,12 +46,10 @@ int main()
 
                 if (pontos[i].y - pontos[j].y == 2)
                 {
-                    // Descendo, acrescentando mais um no caso em que j está acima
                     DP[i][1] = max(DP[i][1], DP[j][0] + 1);
                 }
                 else if (pontos[i].y - pontos[j].y == -2)
                 {
-                    // Subindo, acrescentando mais um no caso em que j está abaixo
                     DP[i][0] = max(DP[i][0], DP[j][1] + 1);
                 }
             }

@@ -37,9 +37,9 @@ int main()
 
     for (int k = 0; k < N; ++k)
     {
-        fgets(frase, sizeof(frase), stdin);  // Lê a linha inteira
+        fgets(frase, sizeof(frase), stdin);
         tam = 0;
-        ptr = strtok(frase, " \n");  // Quebra a frase em palavras
+        ptr = strtok(frase, " \n");
 
         while (ptr != NULL)
         {
@@ -47,7 +47,7 @@ int main()
             ptr = strtok(NULL, " \n");
         }
 
-        insertionSort();  // Chama a função sem passar argumentos
+        insertionSort();
 
         printf("%s", palavras[0]);
         for (int i = 1; i < tam; ++i)

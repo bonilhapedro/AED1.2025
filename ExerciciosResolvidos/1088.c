@@ -24,7 +24,7 @@ long long merge(int arr[], int temp[], int left, int mid, int right) {
             temp[k++] = arr[i++];
         } else {
             temp[k++] = arr[j++];
-            inv_count += (mid - i + 1);  // Count inversions
+            inv_count += (mid - i + 1);
         }
     }
 
